@@ -1,5 +1,5 @@
 {
-  "name": "meentastic-syntax",
+  "name": "conamour-syntax",
   "theme": "syntax",
   "version": "0.0.0",
   "description": "Syntax using greens to denote cozy structure and mellow development",
@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/Galactix/meentastic-syntax",
+  "repository": "https://github.com/Galactix/conamour-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

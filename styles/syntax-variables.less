@@ -1,36 +1,67 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+
+//color combo
+@colorC1: #021c1e;
+@colorC2: #004445;
+@colorC3: #2c7873;
+@colorC4: #2faaac;
+@colorC5: #6fb98f;
+
+//base colors
+@colorB1: #2f3131;
+@colorB2: #666666;
+@colorB3: #9D9EA1;
+@colorB4: #ededed;
+@colorB5: #FFFAFA;
+
+//highlight colors
+@colorH1: #FF795A;
+@colorH2: #27e379;
+@colorH3: #317D78;
+@colorH4: #19d5ff;
+@colorH5: #C7FFFF;
+
+//specialized
+@reference1: @colorB4; //comments
+@reference2: @colorB5; //constant
+@reference3: @colorH4; //name-tag
+@reference5: @colorH2; //keyword
+@reference6: @colorB5; //text
+@reference7: @colorH5; //variable-name
+@reference8: @colorH1; //class
+@reference9: @colorH1; //attribute-name
+@reference4: @colorH1; //attribute-name-id
+@reference0: @colorH1; //definition
+
 // General colors
-@syntax-text-color: @very-light-gray;
-@syntax-cursor-color: white;
-@syntax-selection-color: lighten(@dark-gray, 10%);
-@syntax-background-color: @very-dark-gray;
+@syntax-text-color: @colorH5;
+@syntax-cursor-color: @colorC2;
+@syntax-background-color: @colorC3;
+@syntax-selection-color: @colorC2;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
-
-// For find and replace markers
-@syntax-result-marker-color: @light-gray;
-@syntax-result-marker-color-selected: white;
+@syntax-wrap-guide-color: @colorB1;
+@syntax-indent-guide-color: @colorB2;
+@syntax-invisible-character-color: @colorB3;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @dark-gray;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-text-color: @colorC5;
+@syntax-gutter-text-color-selected: @colorB4;
+@syntax-gutter-background-color: @colorC2;
+@syntax-gutter-background-color-selected: @colorB1;
+
+// Focused colors
+@syntax-focused-linenumber-color-text: @colorH5;
+@syntax-focused-linenumber-color-background: @colorH3;
+
+// For find and replace markers
+@syntax-result-marker-color: @colorH5;
+@syntax-result-marker-color-selected: @colorH3;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
-
-
-//waters
-// black - #021c1e
-// cadet - #004445
-// rain - #2c7873
-// green - #6fb98f
+@syntax-color-renamed: @colorH5;
+@syntax-color-added: @colorC4;
+@syntax-color-modified: @colorH1;
+@syntax-color-removed: @colorH2;

@@ -2,12 +2,12 @@
   "name": "meentastic-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "Syntax using greens to denote cozy structure and mellow development",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/meentastic-syntax",
+  "repository": "https://github.com/Galactix/meentastic-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
